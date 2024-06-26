@@ -344,8 +344,7 @@ const sendOrderToApi = async () => {
       address: customer.address,
       phoneNumber: customer.phone,
       email: customer.email,
-      productDetails: productDetails,
-      totalPrice: totalPrice.value
+      productDetails: productDetails
     }
 
     const response = await axios.post('/api/v1/checkout', orderData)
